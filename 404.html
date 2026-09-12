@@ -23,7 +23,7 @@
         } catch (e) {
           /* sessionStorage 不可用时退化为直接回首页 */
         }
-        location.replace(base);
+        location.replace(base + "?r=" + Date.now());
       })();
     </script>
   </head>
